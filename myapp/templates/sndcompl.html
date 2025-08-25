@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send Complaint</title>
+</head>
+<body>
+    <h2>Send Complaint</h2>
+    <form action="/sndcomp_post/" method="post">
+        {% csrf_token %}
+        <input type="text" name="complaint" placeholder="complaints......!">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

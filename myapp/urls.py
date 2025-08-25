@@ -1,0 +1,48 @@
+
+from django.contrib import admin
+from django.urls import  path
+
+from myapp import views
+
+urlpatterns = [
+    path('reg_get/',views.reg_get),
+    path('reg_post/',views.reg_post),
+    path('',views.login_get),
+    path('login_post/',views.login_post),
+    path('home_get/',views.home_get),
+    path('sellers_get/',views.sellers_get),
+    path('sellers_post/',views.sellers_post),
+    path('homes_get/',views.homes_get),
+    path('views_get/',views.views_get),
+    path('view_get/',views.view_get),
+    path('editu_get/',views.editu_get),
+    path('editu_post/',views.editu_post),
+    path('edits_get/',views.edits_get),
+    path('edite_post/',views.edite_post),
+    path('changeu_get/',views.changeu_get),
+    path('changeu_post/',views.changeu_post),
+    path('changes_get/',views.changes_get),
+    path('changes_post/',views.changes_post),
+    path('sndcomp_get/',views.sndcomp_get),
+    path('sndcomp_post/',views.sndcomp_post),
+    path('viecom_get/',views.viecom_get),
+    path('viewcoms_get/',views.viewcoms_get),
+    path('sndreply_get/<id>',views.sndreply_get),
+    path('sndreply_post/',views.sndreply_post),
+    path('product_get/',views.product_get),
+    path('product_post/',views.product_post),
+    path('view_pros_get/',views.view_pros_get),
+    path('editpro_get/<id>',views.editpro_get),
+    path('editpro_post/',views.editpro_post),
+    path('viewprou_get/',views.viewprou_get),
+    path('qty_get/<id>',views.qty_get),
+    path('qty_post/',views.qty_post),
+    path('viewcart_get/',views.viewcart_get),
+    path('delete/<id>',views.delete),
+    path('buy_get/<id>',views.buy_get),
+    path('buy_post/',views.buy_post),
+    path('vieworderu_get/',views.vieworderu_get),
+    path('buyu_post/',views.buyu_post),
+    path('emailexist/',views.emailexist),
+    path('emailexist_get/',views.emailexist_get),
+]

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send reply</title>
+</head>
+<body>
+    <h2>Send reply</h2>
+    <form action="/sndreply_post/" method="post">
+        {% csrf_token %}
+        <input type="text" name="reply" placeholder="reply......!">
+        <br><br>
+        <input type="submit" value="Submit" >
+        <input type="hidden" name="id" value="{{data.id}}">
+    </form>
+</body>
+</html>

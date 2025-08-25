@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edite user</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="contaier mt-5">
+        <form method="post" action="/editu_post/" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="uname">NAME:</label>
+                <input type="text" id="uname" name="uname" value="{{data.uname}}">
+            </div>
+            <div class="mb-3">
+                <lable for="email">EMAIL:</lable>
+                <input type="text" id="email" name="email" value="{{data.email}}">
+            </div>
+            <div class="mb-3">
+                <label for="uplode">UPLODE:</label>
+                <input type="file" id="uplode" name="uplode">
+            </div>
+            
+            <div class="mb-3">
+                <lable for="phone">PHONE_NO:</lable>
+                <input type="text" id="phone" name="phone" value="{{data.phone}}">
+            </div>
+            <div class="mb-3">
+                <lable for="dob">DATE OF BIRTH:</lable>
+                <input type="date" id="dob" name="dob" >
+            </div>
+            <div class="mb-3">
+                <h6>GENDER:</h6>
+                <label for="male">MALE</label>
+                <input type="radio" id="male" name="gender" value="Male">
+
+                <label for="female">FEMALE</label>
+                <input type="radio" id="female" name="gender" value="Female">
+            </div>
+
+
+            <button type="submit" class="btn btn-success">REGISTER</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
